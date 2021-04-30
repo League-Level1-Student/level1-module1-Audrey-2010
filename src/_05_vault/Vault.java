@@ -3,10 +3,10 @@ package _05_vault;
 import java.util.Random;
 
 public class Vault {
-int code = random;
+int code;
 Vault(){
 	Random random = new Random();
-	random.nextInt()+0+1000000;
+	code=random.nextInt(1000000);
 }
 boolean tryCode(int guess) {
 	if(guess==code) {
